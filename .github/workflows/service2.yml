@@ -1,0 +1,25 @@
+name: Build & Deploy Service2
+
+on:
+  push:
+    branches:
+      - main
+      - dev
+    paths:
+      - "../../service2/**"
+      - ".github/workflows/service2.yml"
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    environment: ${{ github.ref == 'refs/heads/main' && 'prod' || 'dev' }}
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Mock Build
+      run: echo "🔧 Building Service2 for ${{ github.ref_name }}"
+
+    - name: Mock Deploy
+      run: echo "🚀 Deploying Service2 to ${{ github.ref_name }} environment"

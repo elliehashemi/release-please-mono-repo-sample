@@ -1,0 +1,12 @@
+{
+  "packages": {
+    "service1": {
+      "path": "./service1",
+      "component": "service1"
+    },
+    "service2": {
+      "path": "./service2",
+      "component": "service2"
+    }
+  }
+}
