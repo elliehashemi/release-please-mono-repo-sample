@@ -1,15 +1,13 @@
 {
+  "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
+  "release-type": "go",
   "packages": {
     "service1": {
-      "path": "./service1",
       "component": "service1",
-      "release-type": "go",
       "changelogPath": "CHANGELOG.md"
     },
     "service2": {
-      "path": "./service2",
       "component": "service2",
-      "release-type": "go",
       "changelogPath": "CHANGELOG.md"
     }
   }
