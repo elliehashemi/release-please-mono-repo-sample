@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/elliehashemi/release-please-mono-repo-sample/compare/service2-v1.0.1...service2-v1.0.2) (2025-04-10)
+
+
+### 🐛 Bug Fixes
+
+* service2 change message ([ca9a430](https://github.com/elliehashemi/release-please-mono-repo-sample/commit/ca9a4300c06ea2c999d64bc86cec16ba0977f110))
+
 ## [1.0.1](https://github.com/elliehashemi/release-please-mono-repo-sample/compare/service2-v1.0.0...service2-v1.0.1) (2025-04-10)
 
 
