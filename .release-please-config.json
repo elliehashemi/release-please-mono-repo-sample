@@ -1,6 +1,63 @@
 {
   "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
   "release-type": "go",
+  "changelog-sections": [
+    {
+      "type": "feature",
+      "section": "🚀 Features"
+    },
+    {
+      "type": "feat",
+      "section": "🚀 Features"
+    },
+    {
+      "type": "fix",
+      "section": "🐛 Bug Fixes"
+    },
+    {
+      "type": "perf",
+      "section": "⚡ Performance Improvements"
+    },
+    {
+      "type": "revert",
+      "section": "◀️ Reverts"
+    },
+    {
+      "type": "docs",
+      "section": "📚 Documentation",
+      "hidden": false
+    },
+    {
+      "type": "style",
+      "section": "🎨 Styles",
+      "hidden": false
+    },
+    {
+      "type": "chore",
+      "section": "⚙️ Miscellaneous Chores",
+      "hidden": false
+    },
+    {
+      "type": "refactor",
+      "section": "🚜 Code Refactoring",
+      "hidden": false
+    },
+    {
+      "type": "test",
+      "section": "🧪 Tests",
+      "hidden": false
+    },
+    {
+      "type": "build",
+      "section": "🛠️ Build System",
+      "hidden": false
+    },
+    {
+      "type": "ci",
+      "section": "🥏 Continuous Integration",
+      "hidden": false
+    }
+  ],
   "packages": {
     "service1": {
       "component": "service1",
