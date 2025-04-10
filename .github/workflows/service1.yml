@@ -3,27 +3,27 @@ name: Build & Deploy Service1
 on:
   push:
     branches:
-      - main
       - dev
     paths:
       - "service1/**"
       - ".github/workflows/service1.yml"
 
 jobs:
-  build-and-deploy:
+  build-and-deploy-dev:
     runs-on: ubuntu-latest
-    environment: ${{ github.ref == 'refs/heads/main' && 'prod' || 'dev' }}
+    environment: dev
+    # environment: ${{ github.ref == 'refs/heads/main' && 'prod' || 'dev' }}
 
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
 
     - name: Mock Build
-      run: echo "🔧 Building Service1 for ${{ github.ref_name }}"
+      run: echo "🔧 Building Service1 for Dev"
 
     - name: Mock Deploy
       run: |
-       echo "🚀 Deploying Service1 to ${{ github.ref_name }} environment"
+       echo "🚀 Deploying Service1 to Dev environment"
        echo "🧪 ENV MESSAGE: $ENV_MESSAGE"
       env:
         ENV_MESSAGE: ${{ vars.ENV_MESSAGE }}
