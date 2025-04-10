@@ -2,11 +2,13 @@
   "packages": {
     "service1": {
       "path": "./service1",
-      "component": "service1"
+      "component": "service1",
+      "generator": "go"
     },
     "service2": {
       "path": "./service2",
-      "component": "service2"
+      "component": "service2",
+      "generator": "go"
     }
   }
 }
