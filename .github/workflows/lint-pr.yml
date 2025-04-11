@@ -35,7 +35,7 @@ jobs:
     needs: pr-check
     strategy:
       matrix:
-        service: [service1, service2]
+        service: [service1, service2,utils]
     uses: ./.github/workflows/ci.yml
     with:
       service: ${{ matrix.service }}
