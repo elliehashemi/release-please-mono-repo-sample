@@ -12,8 +12,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Fetch base branch
+        run: git fetch origin ${{ github.base_ref }}
 
-      - name: Check if service has changes #compares file changes between base and Head
+      - name: Check if ${{ inputs.service }} has changed #compares file changes between base and Head
         id: changes
         run: |
           echo "🔍 Checking changes for ${{ inputs.service }}..."
