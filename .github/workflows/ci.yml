@@ -12,8 +12,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # So we can fetch all refs
+
       - name: Fetch base branch
-        run: git fetch origin ${{ github.base_ref }}
+        run: git fetch origin ${{ github.base_ref }} || echo "⚠️ Branch ${{ github.base_ref }} not found"
 
       - name: Check if ${{ inputs.service }} has changed #compares file changes between base and Head
         id: changes
