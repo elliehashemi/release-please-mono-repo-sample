@@ -22,4 +22,8 @@ jobs:
       run: echo "🔧 Building Service2 for ${{ github.ref_name }}"
 
     - name: Mock Deploy
-      run: echo "🚀 Deploying Service2 to ${{ github.ref_name }} environment"
+      run: |
+       echo "🚀 Deploying Service2 to ${{ github.ref_name }} environment"
+       echo "🧪 ENV MESSAGE: $ENV_MESSAGE"
+      env:
+        ENV_MESSAGE: ${{ vars.ENV_MESSAGE }}
