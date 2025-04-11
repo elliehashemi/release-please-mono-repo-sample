@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.0](https://github.com/elliehashemi/release-please-mono-repo-sample/compare/service2-v1.0.3...service2-v1.1.0) (2025-04-11)
+
+
+### 🚀 Features
+
+* new github actions ([9d8d293](https://github.com/elliehashemi/release-please-mono-repo-sample/commit/9d8d29378663b400de60fdaa30e89af9d6ffc443))
+* new github actions ([9d8d293](https://github.com/elliehashemi/release-please-mono-repo-sample/commit/9d8d29378663b400de60fdaa30e89af9d6ffc443))
+
 ## [1.0.3](https://github.com/elliehashemi/release-please-mono-repo-sample/compare/service2-v1.0.2...service2-v1.0.3) (2025-04-10)
 
 
