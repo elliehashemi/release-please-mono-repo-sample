@@ -1,0 +1,21 @@
+name: Run CI Tests
+
+on:
+  push:
+   branches: [main,dev]
+  workflow_call:
+    inputs:
+      service:
+        required: true
+        type: string
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run tests
+        run: |
+          cd ${{ inputs.service }}
+          go test ./...

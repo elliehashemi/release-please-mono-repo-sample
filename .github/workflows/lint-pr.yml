@@ -31,7 +31,11 @@ jobs:
             didn't match the configured pattern. Please ensure that the subject
             starts with a lowercase character.
 
-  # ci:
-  #   name: CI
-  #   needs: pr-check
-  #   uses: ./.github/workflows/ci.yml
+  ci:
+    needs: pr-check
+    strategy:
+      matrix:
+        service: [service1, service2]
+    uses: ./.github/workflows/ci.yml
+    with:
+      service: ${{ matrix.service }}
