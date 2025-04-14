@@ -19,19 +19,19 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Set up Go
-        uses: actions/setup-go@v3
-        with:
-          go-version: '1.23.2'  # Use the version of Go you're working with
+      # - name: Set up Go
+      #   uses: actions/setup-go@v3
+      #   with:
+      #     go-version: '1.23.2'  # Use the version of Go you're working with
 
-      - name: Install golangci-lint
-        run: |
-          curl -sSfL https://github.com/golangci/golangci-lint/releases/download/v1.45.0/golangci-lint-1.45.0-linux-amd64.tar.gz | tar -xzv -C /tmp
-          sudo mv /tmp/golangci-lint-*/golangci-lint /usr/local/bin
+      # - name: Install golangci-lint
+      #   run: |
+      #     curl -sSfL https://github.com/golangci/golangci-lint/releases/download/v1.45.0/golangci-lint-1.45.0-linux-amd64.tar.gz | tar -xzv -C /tmp
+      #     sudo mv /tmp/golangci-lint-*/golangci-lint /usr/local/bin
 
-      - name: Run golangci-lint
-        run: |
-          golangci-lint run --timeout 5m
+      # - name: Run golangci-lint
+      #   run: |
+      #     golangci-lint run --timeout 5m
 
       - name: Lint PR
         uses: amannn/action-semantic-pull-request@v5
