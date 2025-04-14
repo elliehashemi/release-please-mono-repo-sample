@@ -1,0 +1,8 @@
+go 1.23.2
+
+use (
+	./service1
+	./service2
+	./utils/awsutils
+	./utils/gcputils
+)
