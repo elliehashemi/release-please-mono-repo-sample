@@ -23,7 +23,7 @@ jobs:
         run: |
           echo "🔍 Checking changes for ${{ inputs.service }}..."
 
-          CHANGED_FILES=$(git diff --name-only origin/${{ github.base_ref }}...HEAD)
+          CHANGED=$(git diff --name-only origin/${{ github.base_ref }}...HEAD)
           echo "🔄 Changed files:"
           echo "$CHANGED"
 
