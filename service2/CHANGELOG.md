@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.2.0](https://github.com/elliehashemi/release-please-mono-repo-sample/compare/service2-v1.1.0...service2-v1.2.0) (2025-04-14)
+
+
+### 🚀 Features
+
+* added go.work ([7ba07c4](https://github.com/elliehashemi/release-please-mono-repo-sample/commit/7ba07c49cb30aebf5f40c853b83059d69e42e34b))
+* integrated go workspaces ([792c7cc](https://github.com/elliehashemi/release-please-mono-repo-sample/commit/792c7cc6fef6aeefdd5eb0b6841d03d29f3cf53e))
+* integrated go workspaces ([792c7cc](https://github.com/elliehashemi/release-please-mono-repo-sample/commit/792c7cc6fef6aeefdd5eb0b6841d03d29f3cf53e))
+
 ## [1.1.0](https://github.com/elliehashemi/release-please-mono-repo-sample/compare/service2-v1.0.3...service2-v1.1.0) (2025-04-11)
 
 
