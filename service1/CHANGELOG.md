@@ -1,5 +1,25 @@
 # Changelog
 
+## [1.2.0](https://github.com/elliehashemi/release-please-mono-repo-sample/compare/service1-v1.1.0...service1-v1.2.0) (2025-04-14)
+
+
+### 🚀 Features
+
+* added go.work ([7ba07c4](https://github.com/elliehashemi/release-please-mono-repo-sample/commit/7ba07c49cb30aebf5f40c853b83059d69e42e34b))
+* added test 3 to service 1 ([f3e2d6a](https://github.com/elliehashemi/release-please-mono-repo-sample/commit/f3e2d6a600f291b2ca542844ddc59336f1c39fb9))
+* added test 3 to service 1 ([f3e2d6a](https://github.com/elliehashemi/release-please-mono-repo-sample/commit/f3e2d6a600f291b2ca542844ddc59336f1c39fb9))
+* added test 3 to service 1 ([5257840](https://github.com/elliehashemi/release-please-mono-repo-sample/commit/52578402770b569ec695ea51c81e402f111a9e07))
+* added test2 to service1 ([387efcf](https://github.com/elliehashemi/release-please-mono-repo-sample/commit/387efcff63d71569561a46869ca649078034483f))
+* added test2 to service1 ([387efcf](https://github.com/elliehashemi/release-please-mono-repo-sample/commit/387efcff63d71569561a46869ca649078034483f))
+* added test2 to service1 ([e428a9a](https://github.com/elliehashemi/release-please-mono-repo-sample/commit/e428a9a57d8cf37c9efd07848cb1287cf05ee314))
+* integrated go workspaces ([792c7cc](https://github.com/elliehashemi/release-please-mono-repo-sample/commit/792c7cc6fef6aeefdd5eb0b6841d03d29f3cf53e))
+* integrated go workspaces ([792c7cc](https://github.com/elliehashemi/release-please-mono-repo-sample/commit/792c7cc6fef6aeefdd5eb0b6841d03d29f3cf53e))
+
+
+### 🐛 Bug Fixes
+
+* changed in service1 tests ([8df9a48](https://github.com/elliehashemi/release-please-mono-repo-sample/commit/8df9a4887dc5df10baecbe1c908bbdee7c37509f))
+
 ## [1.1.0](https://github.com/elliehashemi/release-please-mono-repo-sample/compare/service1-v1.0.2...service1-v1.1.0) (2025-04-11)
 
 
