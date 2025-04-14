@@ -8,3 +8,6 @@ func TestExample(t *testing.T) {
 func TestExample2(t *testing.T) {
 	t.Log("✅ Service1 test2 passed!")
 }
+func TestExample3(t *testing.T) {
+	t.Log("✅ Service1 test3 passed!")
+}
