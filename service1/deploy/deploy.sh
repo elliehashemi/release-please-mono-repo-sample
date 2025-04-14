@@ -1,14 +1,17 @@
 #!/bin/bash
 ENV=$1
 echo "🚀 Preparing deployment for $ENV"
+# IMAGE_TAG="service1:$(git rev-parse --short HEAD)"
+# REGISTRY="ghcr.io/your-org/service1"
 
-# Update kustomize base or overlay if needed
-# e.g., update image tag in kustomize overlay
-# sed -i "s|newTag: .*|newTag: $(git rev-parse --short HEAD)|" overlays/$ENV/kustomization.yaml
+echo "🔨 Building Docker image..."
+# docker build -t "$REGISTRY-$ENV" .
 
-# # Commit and push the change (optional or automated via bot)
-# git config user.name "ci-bot"
-# git config user.email "ci-bot@example.com"
-# git add overlays/$ENV/kustomization.yaml
-# git commit -m "chore(deploy): deploy service1 to $ENV"
-# git push origin dev
+echo "🚀 Pushing image..."
+# docker push "$REGISTRY-$ENV"
+
+echo "🧩 Updating GitOps config..."
+# cd ../gitops-repo/service1/overlays/$ENV
+# kustomize edit set image service1="$REGISTRY-$ENV"
+# git commit -am "Update image for $ENV"
+# git push

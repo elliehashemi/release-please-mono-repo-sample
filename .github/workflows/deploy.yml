@@ -10,10 +10,18 @@ on:
         description: 'Environment (dev, qa, prod)'
         required: true
 
+  push:
+    branches: [ main ]  # triggers prod deployment automatically
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: 🛡️ Block manual deploys to prod
+        if: github.event_name == 'workflow_dispatch' && github.event.inputs.environment == 'prod'
+        run: |
+          echo "❌ Manual deploys to PROD are not allowed."
+          exit 1
+
       - name: Checkout
         uses: actions/checkout@v4
 
