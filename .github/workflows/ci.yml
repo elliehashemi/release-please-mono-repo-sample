@@ -18,21 +18,40 @@ jobs:
       - name: Fetch base branch
         run: git fetch origin ${{ github.base_ref }} || echo "⚠️ Branch ${{ github.base_ref }} not found"
 
-      - name: Check ${{ inputs.service }} for changes or utils updates ... #compares file changes between base and Head
+      - name: Check if ${{ inputs.service }} or its dependencies changed ... #compares file changes between base and Head
         id: changes
         run: |
-          echo "🔍 Checking changes for ${{ inputs.service }} or utils..."
+          echo "🔍 Checking changes for ${{ inputs.service }}..."
 
           CHANGED_FILES=$(git diff --name-only origin/${{ github.base_ref }}...HEAD)
+          echo "🔄 Changed files:"
+          echo "$CHANGED"
 
-          if echo "$CHANGED_FILES" | grep -qE "^${{ inputs.service }}/|^utils/"; then
-           echo "changed=true" >> $GITHUB_OUTPUT
-           echo "${{ inputs.service }} changed: true"
-           echo "📝 Relevant changed files:"
-           echo "$CHANGED_FILES" | grep -E "^${{ inputs.service }}/|^utils/"
+          SERVICE_CHANGED=$(echo "$CHANGED" | grep "^${{ inputs.service }}/" || true)
+
+          # Check if any utils changed
+          UTILS_CHANGED=$(echo "$CHANGED" | grep "^utils/" || true)
+
+          if [ -n "$SERVICE_CHANGED" ]; then
+            echo "✅ ${{ inputs.service }} changed directly."
+            SHOULD_RUN_TESTS=true
+          elif [ -n "$UTILS_CHANGED" ]; then
+            echo "🧠 Checking if ${{ inputs.service }} imports any changed utils..."
+            for file in $(echo "$CHANGED" | grep "^utils/" | uniq); do
+               util_dir=$(echo "$file" | cut -d/ -f2) 
+               if grep -qr "utils/$util_dir" ${{ inputs.service }}; then
+                 echo "✅ ${{ inputs.service }} imports utils/$util_dir"
+                 SHOULD_RUN_TESTS=true
+                 break
+               fi
+            done
+          fi
+
+          if [ "$SHOULD_RUN_TESTS" = true ]; then
+            echo "changed=true" >> $GITHUB_OUTPUT
           else
-           echo "changed=false" >> $GITHUB_OUTPUT
-           echo "${{ inputs.service }} changed: false"
+            echo "changed=false" >> $GITHUB_OUTPUT
+             echo "❌ No relevant changes for ${{ inputs.service }}"
           fi
 
       - name: Run tests
