@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.3.0](https://github.com/elliehashemi/release-please-mono-repo-sample/compare/service1-v1.2.0...service1-v1.3.0) (2025-04-14)
+
+
+### 🚀 Features
+
+* changed the flow of deploy ([41e7e6b](https://github.com/elliehashemi/release-please-mono-repo-sample/commit/41e7e6bde24bf2eeabc0ed8a479e92a2f03f36a4))
+* changed the flow of deploy ([41e7e6b](https://github.com/elliehashemi/release-please-mono-repo-sample/commit/41e7e6bde24bf2eeabc0ed8a479e92a2f03f36a4))
+* changed the flow of deploy ([b89b5b6](https://github.com/elliehashemi/release-please-mono-repo-sample/commit/b89b5b6577ecc3134201a41dba508dd404ec85ad))
+* deployment separation ([55b2b29](https://github.com/elliehashemi/release-please-mono-repo-sample/commit/55b2b295091a6e2b254748772034c835a30e3feb))
+* deployment separation ([55b2b29](https://github.com/elliehashemi/release-please-mono-repo-sample/commit/55b2b295091a6e2b254748772034c835a30e3feb))
+* deployment separation ([74152b6](https://github.com/elliehashemi/release-please-mono-repo-sample/commit/74152b6daccbbcfe7ece0fdc2684405a158d88ef))
+
 ## [1.2.0](https://github.com/elliehashemi/release-please-mono-repo-sample/compare/service1-v1.1.0...service1-v1.2.0) (2025-04-14)
 
 
