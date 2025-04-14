@@ -9,6 +9,7 @@ on:
       environment:
         description: 'Environment (dev, qa, prod)'
         required: true
+        default: 'prod'
 
   push:
     branches: [ main ]  # triggers prod deployment automatically
