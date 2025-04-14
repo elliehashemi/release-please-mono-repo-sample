@@ -50,7 +50,7 @@ jobs:
     needs: pr-check
     strategy:
       matrix:
-        service: [utils,service1, service2]
+        service: [service1, service2,utils/awsutils, utils/gcputils] #Todo: you can auto-generate this list based on which services depend on changed utils
     uses: ./.github/workflows/ci.yml
     with:
       service: ${{ matrix.service }}
