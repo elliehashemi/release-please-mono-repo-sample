@@ -18,21 +18,21 @@ jobs:
       - name: Fetch base branch
         run: git fetch origin ${{ github.base_ref }} || echo "⚠️ Branch ${{ github.base_ref }} not found"
 
-      - name: Check ${{ inputs.service }} for changes... #compares file changes between base and Head
+      - name: Check ${{ inputs.service }} for changes or utils updates ... #compares file changes between base and Head
         id: changes
         run: |
-          echo "🔍 Checking changes for ${{ inputs.service }}..."
+          echo "🔍 Checking changes for ${{ inputs.service }} or utils..."
 
-          CHANGED_FILES=$(git diff --name-only origin/${{ github.base_ref }}...HEAD | grep "^${{ inputs.service }}/" || true)
+          CHANGED_FILES=$(git diff --name-only origin/${{ github.base_ref }}...HEAD)
 
-          if [ -n "$CHANGED_FILES" ]; then
-            echo "changed=true" >> $GITHUB_OUTPUT
-            echo "${{ inputs.service }} changed: true"
-            echo "📝 Changed files:"
-            echo "$CHANGED_FILES"
+          if echo "$CHANGED_FILES" | grep -qE "^${{ inputs.service }}/|^utils/"; then
+           echo "changed=true" >> $GITHUB_OUTPUT
+           echo "${{ inputs.service }} changed: true"
+           echo "📝 Relevant changed files:"
+           echo "$CHANGED_FILES" | grep -E "^${{ inputs.service }}/|^utils/"
           else
-            echo "changed=false" >> $GITHUB_OUTPUT
-            echo "${{ inputs.service }} changed: false"
+           echo "changed=false" >> $GITHUB_OUTPUT
+           echo "${{ inputs.service }} changed: false"
           fi
 
       - name: Run tests
