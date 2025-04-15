@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.3.1](https://github.com/elliehashemi/release-please-mono-repo-sample/compare/service1-v1.3.0...service1-v1.3.1) (2025-04-15)
+
+
+### 🐛 Bug Fixes
+
+* changed message in main service1 ([10b37cd](https://github.com/elliehashemi/release-please-mono-repo-sample/commit/10b37cdb553887779bfd9e7d5c78c343632ff7f6))
+* changed message in main service1-feature branch title ([c449e42](https://github.com/elliehashemi/release-please-mono-repo-sample/commit/c449e4209d8e14a7399ec8eed3759260e990fd76))
+* merge dev into main ([703affb](https://github.com/elliehashemi/release-please-mono-repo-sample/commit/703affbb8fbfcdea849b1e2168e9e999095732b4))
+* merge pull request [#31](https://github.com/elliehashemi/release-please-mono-repo-sample/issues/31) from elliehashemi/branch12 ([c449e42](https://github.com/elliehashemi/release-please-mono-repo-sample/commit/c449e4209d8e14a7399ec8eed3759260e990fd76))
+* merge pull request [#32](https://github.com/elliehashemi/release-please-mono-repo-sample/issues/32) from elliehashemi/dev-the main PR ([703affb](https://github.com/elliehashemi/release-please-mono-repo-sample/commit/703affbb8fbfcdea849b1e2168e9e999095732b4))
+
 ## [1.3.0](https://github.com/elliehashemi/release-please-mono-repo-sample/compare/service1-v1.2.0...service1-v1.3.0) (2025-04-14)
 
 
