@@ -1,6 +1,8 @@
 {
   "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
   "release-type": "go",
+  "pull-request-header": ":robot: Auto-generated release PR",
+  "changelog-type": "conventional",
   "changelog-sections": [
     {
       "type": "feature",
@@ -65,7 +67,7 @@
       "include-component-in-tag": true,
       "bump-minor-pre-major": true,
       "group-pull-requests": true,
-      "changelog-type": "github",
+
       "pull-request-title-pattern": "🚀 Release ${component} ${version}",
       "draft": false
     },
