@@ -65,6 +65,7 @@
       "include-component-in-tag": true,
       "bump-minor-pre-major": true,
       "group-pull-requests": true,
+      "changelog-type": "github",
       "pull-request-title-pattern": "chore: release ${component} ${version}",
       "draft": false
     },

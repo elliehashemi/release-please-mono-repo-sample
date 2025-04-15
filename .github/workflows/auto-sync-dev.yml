@@ -1,0 +1,29 @@
+name: Auto-sync main into dev after release
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  sync-dev:
+    if: "${{ startsWith(github.event.head_commit.message, 'chore: release') }}"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Set Git identity
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Merge main into dev
+        run: |
+          git checkout dev
+          git pull origin dev
+          git merge origin/main --no-edit
+          git push origin dev
