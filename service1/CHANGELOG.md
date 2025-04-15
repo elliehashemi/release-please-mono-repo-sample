@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.3.5 (2025-04-15)
+
+## What's Changed
+* fix: branch 17 dev to main by @elliehashemi in https://github.com/elliehashemi/release-please-mono-repo-sample/pull/44
+
+
+**Full Changelog**: https://github.com/elliehashemi/release-please-mono-repo-sample/compare/service1-v1.3.4...service1-v1.3.5
+
 ## 1.3.4 (2025-04-15)
 
 ## What's Changed
