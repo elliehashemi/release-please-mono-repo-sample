@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.3.6](https://github.com/elliehashemi/release-please-mono-repo-sample/compare/service1-v1.3.5...service1-v1.3.6) (2025-04-15)
+
+
+### 🐛 Bug Fixes
+
+* branch 19 main to dev ([#49](https://github.com/elliehashemi/release-please-mono-repo-sample/issues/49)) ([068fcbb](https://github.com/elliehashemi/release-please-mono-repo-sample/commit/068fcbba5aefc48c66e6fa16c8c12699a710b61b))
+
+
+### ⚙️ Miscellaneous Chores
+
+* release branch 18 changes ([#47](https://github.com/elliehashemi/release-please-mono-repo-sample/issues/47)) ([3c3b220](https://github.com/elliehashemi/release-please-mono-repo-sample/commit/3c3b2208eafb5d2e6d71be36ae62cd0248524a33))
+
 ## 1.3.5 (2025-04-15)
 
 ## What's Changed
