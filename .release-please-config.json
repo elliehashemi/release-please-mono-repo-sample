@@ -61,7 +61,12 @@
   "packages": {
     "service1": {
       "component": "service1",
-      "changelogPath": "CHANGELOG.md"
+      "changelogPath": "CHANGELOG.md",
+      "include-component-in-tag": true,
+      "bump-minor-pre-major": true,
+      "group-pull-requests": true,
+      "pull-request-title-pattern": "chore: release ${component} ${version}",
+      "draft": false
     },
     "service2": {
       "component": "service2",
