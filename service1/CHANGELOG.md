@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.3.4 (2025-04-15)
+
+## What's Changed
+* fix: branch 14 - feature branch title by @elliehashemi in https://github.com/elliehashemi/release-please-mono-repo-sample/pull/37
+* fix: new syn githubaction- feature pr by @elliehashemi in https://github.com/elliehashemi/release-please-mono-repo-sample/pull/38
+* fix: change msg to branch 16- feature pr by @elliehashemi in https://github.com/elliehashemi/release-please-mono-repo-sample/pull/41
+
+
+**Full Changelog**: https://github.com/elliehashemi/release-please-mono-repo-sample/compare/service1-v1.3.3...service1-v1.3.4
+
 ## 1.3.3 (2025-04-15)
 
 ## What's Changed
