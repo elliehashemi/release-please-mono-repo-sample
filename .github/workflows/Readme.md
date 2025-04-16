@@ -26,3 +26,43 @@ Release Flow:
 │ └─> Create Release (GitHub release) with version bump and changelog 🤖
 │
 └─> New Release Published 🎉``` </pre>
+
+## ✅ Development Checklist
+
+Please ensure the following guidelines are followed before submitting a Pull Request:
+
+### 📂 Branch Naming Convention
+
+- [ ] Branch name must follow the format:  
+      **Examples:**
+- `feature/IMS-1234-add-login-button`
+- `fix/IMS-5678-fix-null-pointer-error`
+
+---
+
+### 💬 Commit Message Convention
+
+- [ ] All commits should follow [Conventional Commits](https://www.conventionalcommits.org/) format:
+
+**Examples:**
+
+- `feat: add user authentication flow`
+- `fix(login): handle empty input fields`
+- `chore: update dependencies`
+- `refactor(auth): simplify token validation`
+
+**Allowed types include:**
+
+- `feat` — A new feature
+- `fix` — A bug fix
+- `docs` — Documentation changes
+- `style` — Code style changes (formatting, missing semi colons, etc.)
+- `refactor` — Code refactoring without changing behavior
+- `perf` — Performance improvements
+- `test` — Adding or fixing tests
+- `chore` — Maintenance and routine tasks
+- `ci` — Continuous Integration-related changes
+
+---
+
+By following these conventions, we ensure cleaner git history, better automation, and easier release management 🚀
