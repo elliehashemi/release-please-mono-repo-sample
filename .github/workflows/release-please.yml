@@ -2,7 +2,7 @@ name: 🤖 Release Please
 
 on:
   workflow_run:
-    workflows: ["🔁 Sync Dev to Main"]
+    workflows: ["🔁 Start Release"]
     types:
       - completed
 
