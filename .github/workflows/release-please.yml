@@ -1,11 +1,6 @@
 name: 🤖 Release Please
 
 on:
-  workflow_run:
-    workflows: ["🔁 Start Release"]
-    types:
-      - completed
-
   push:
     branches: [ main ]
 
