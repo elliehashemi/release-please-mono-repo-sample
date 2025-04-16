@@ -1,16 +1,11 @@
 name: 🚀 Post Release Sync:Main -> Dev
 
 on:
-  workflow_run:
-    workflows: ["🤖 Release Please"]
-    types:
-      - completed
+  release:
+    types: [published]
 
 jobs:
   sync-main-to-dev:
-    if: >
-      ${{ github.event.workflow_run.conclusion == 'success' }} &&
-      contains(github.event.workflow_run.head_commit.message, 'chore: release')
     runs-on: ubuntu-latest
     steps:
       - name: ⬇️ Checkout `main`
