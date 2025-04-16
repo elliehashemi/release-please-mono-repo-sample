@@ -1,12 +1,19 @@
-name: Release Please
+name: 🤖 Release Please
 
 on:
+  workflow_run:
+    workflows: ["🔁 Sync Dev to Main"]
+    types:
+      - completed
+
   push:
     branches: [ main ]
 
-
 jobs:
   release-please:
+    if: >
+      github.event_name == 'push' || 
+      (github.event.workflow_run.conclusion == 'success')
     runs-on: ubuntu-latest
     steps:
       - uses: google-github-actions/release-please-action@v4
