@@ -65,13 +65,13 @@
     }
   ],
   "packages": {
-    "service1": {
+    "cmd/service1": {
       "component": "service1",
       "changelogPath": "cmd/service1/CHANGELOG.md",
 
       "draft": false
     },
-    "service2": {
+    "cmd/service2": {
       "component": "service2",
       "changelogPath": "cmd/service2/CHANGELOG.md"
     }
