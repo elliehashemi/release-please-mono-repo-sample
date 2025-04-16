@@ -4,5 +4,5 @@ import "fmt"
 
 // A simple AWS utility function
 func GetGCPInfo() {
-	fmt.Println("GCP Info: Placeholder function")
+	fmt.Println("GCP Info: Placeholder function!")
 }
