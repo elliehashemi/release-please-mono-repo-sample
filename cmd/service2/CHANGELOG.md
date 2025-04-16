@@ -1,5 +1,18 @@
 # Changelog
 
+## [2.0.0](https://github.com/elliehashemi/release-please-mono-repo-sample/compare/service2-v1.3.1...service2-v2.0.0) (2025-04-16)
+
+
+### 🚀 Features
+
+* big change in design ([#57](https://github.com/elliehashemi/release-please-mono-repo-sample/issues/57)) ([0c79f51](https://github.com/elliehashemi/release-please-mono-repo-sample/commit/0c79f51c967163b605d1d300dc75a60201289dad))
+
+
+### ⚙️ Miscellaneous Chores
+
+* release 2.0.0 ([3130fb8](https://github.com/elliehashemi/release-please-mono-repo-sample/commit/3130fb82a061f907f5abfa901892702f2e4d427b))
+* sync dev into main ([e992638](https://github.com/elliehashemi/release-please-mono-repo-sample/commit/e992638c6c4da3dbacd031b1e8b6e0e9cf2d5d08))
+
 ## [1.3.1](https://github.com/elliehashemi/release-please-mono-repo-sample/compare/service2-v1.3.0...service2-v1.3.1) (2025-04-16)
 
 
