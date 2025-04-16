@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.3.9](https://github.com/elliehashemi/release-please-mono-repo-sample/compare/service1-v1.3.8...service1-v1.3.9) (2025-04-16)
+
+
+### 🐛 Bug Fixes
+
+* tested token in sync yml ([#55](https://github.com/elliehashemi/release-please-mono-repo-sample/issues/55)) ([be91652](https://github.com/elliehashemi/release-please-mono-repo-sample/commit/be916522ce98b98ac10050295e7d9e22e27d1818))
+
+
+### ⚙️ Miscellaneous Chores
+
+* sync dev into main ([984391e](https://github.com/elliehashemi/release-please-mono-repo-sample/commit/984391e9815b0d8121679f96971c98926eda7aae))
+
 ## [1.3.8](https://github.com/elliehashemi/release-please-mono-repo-sample/compare/service1-v1.3.7...service1-v1.3.8) (2025-04-16)
 
 
