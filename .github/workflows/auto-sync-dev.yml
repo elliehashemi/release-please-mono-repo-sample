@@ -1,31 +1,29 @@
-name: Auto-sync main into dev after release
+name: 🔁 Sync Dev to Main
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
 
 jobs:
-  sync-dev:
-    if: "${{ startsWith(github.event.head_commit.message, 'chore: release') }}"
+  sync-dev-to-main:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo
+      - name: ⬇️ Checkout `dev`
         uses: actions/checkout@v4
         with:
+          ref: dev
           token: ${{ secrets.GH_CLASSIC_PAT }}
           fetch-depth: 0
 
-      - name: Set up Git
+      - name: ⚙️ Set up Git
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
           git remote set-url origin https://x-access-token:${{ secrets.GH_CLASSIC_PAT }}@github.com/${{ github.repository }}
 
 
-      - name: Merge main into dev
+      - name: 🔁 Merge `dev` into `main`
         run: |
-          git checkout dev
-          git pull origin dev
-          git merge origin/main --no-edit
-          git push origin dev
+          git fetch origin main
+          git checkout main
+          git merge origin/dev --no-ff -m "chore: sync dev into main"
+          git push origin main
