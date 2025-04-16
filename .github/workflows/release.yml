@@ -1,4 +1,4 @@
-name: 🔁 Sync Dev to Main
+name: 🔁 Start Release
 
 on:
   workflow_dispatch:
