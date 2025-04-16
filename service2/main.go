@@ -8,5 +8,5 @@ import (
 
 func main() {
 	gcputils.GetGCPInfo()
-	fmt.Println("Service 2 is running!!")
+	fmt.Println("Service 2 is running- branch 21!!")
 }

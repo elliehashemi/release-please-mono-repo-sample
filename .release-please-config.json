@@ -2,6 +2,11 @@
   "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
   "release-type": "go",
   "pull-request-header": ":robot: Auto-generated release PR",
+  "include-component-in-tag": true,
+  "bump-minor-pre-major": true,
+  "group-pull-requests": true,
+  "pull-request-title-pattern": "🚀 Release ${component} ${version}",
+
   "changelog-sections": [
     {
       "type": "feature",
@@ -62,17 +67,13 @@
   "packages": {
     "service1": {
       "component": "service1",
-      "changelogPath": "CHANGELOG.md",
-      "include-component-in-tag": true,
-      "bump-minor-pre-major": true,
-      "group-pull-requests": true,
+      "changelogPath": "service1/CHANGELOG.md",
 
-      "pull-request-title-pattern": "🚀 Release ${component} ${version}",
       "draft": false
     },
     "service2": {
       "component": "service2",
-      "changelogPath": "CHANGELOG.md"
+      "changelogPath": "service2/CHANGELOG.md"
     }
   }
 }
