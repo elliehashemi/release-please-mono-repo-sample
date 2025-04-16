@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.3.8](https://github.com/elliehashemi/release-please-mono-repo-sample/compare/service1-v1.3.7...service1-v1.3.8) (2025-04-16)
+
+
+### 🐛 Bug Fixes
+
+* changed rp config ([#53](https://github.com/elliehashemi/release-please-mono-repo-sample/issues/53)) ([702a06e](https://github.com/elliehashemi/release-please-mono-repo-sample/commit/702a06e1012a4055176108e70f61500a86ead9d1))
+
+
+### ⚙️ Miscellaneous Chores
+
+* sync dev into main ([58a3c8f](https://github.com/elliehashemi/release-please-mono-repo-sample/commit/58a3c8f9fb41cb08c193c43f656c8ce0f968e870))
+
 ## [1.3.7](https://github.com/elliehashemi/release-please-mono-repo-sample/compare/service1-v1.3.6...service1-v1.3.7) (2025-04-16)
 
 
