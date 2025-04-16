@@ -11,14 +11,14 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: dev
-          token: ${{ secrets.GH_CLASSIC_PAT }}
+          token: ${{ secrets.Release_please_secret }}
           fetch-depth: 0
 
       - name: ⚙️ Set up Git
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
-          git remote set-url origin https://x-access-token:${{ secrets.GH_CLASSIC_PAT }}@github.com/${{ github.repository }}
+          git remote set-url origin https://x-access-token:${{ secrets.Release_please_secret }}@github.com/${{ github.repository }}
 
 
       - name: 🔁 Merge `dev` into `main`
